@@ -1,7 +1,7 @@
 version: "3.9"
-service:
+services:
   apache:
-    imagem: hhtpd:latest
+    image: httpd:latest
     container_name: meu-primeiro-apache-app
     ports:
     - '80:80'

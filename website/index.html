@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Salles - Portfólio</title>
+  <style>
+    /* Fundo estilo galáxia */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      overflow: hidden;
+    }
+
+    /* Estrelas animadas */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+      opacity: 0.3;
+      animation: twinkle 6s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.6; }
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 0;
+      color: #bbb;
+      z-index: 1;
+    }
+
+    .contact {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.4);
+      padding: 8px 12px;
+      border-radius: 8px;
+      z-index: 2;
+    }
+
+    .contact a {
+      color: #58a6ff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #9ccfff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lucas Salles</h1>
+  <p>Portfólio Pessoal</p>
+
+  <div class="contact">
+    <a href="https://github.com/salleslucas" target="_blank">github.com/salleslucas</a>
+  </div>
+</body>
+</html>
+
