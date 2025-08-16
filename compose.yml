@@ -1,0 +1,9 @@
+version: "3.9"
+service:
+  apache:
+    imagem: hhtpd:latest
+    container_name: meu-primeiro-apache-app
+    ports:
+    - '80:80'
+    volumes:
+    - ./website:/usr/local/apache2/htdocs
